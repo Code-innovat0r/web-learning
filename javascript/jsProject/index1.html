@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cards</title>
+</head>
+<style>
+    *{
+        color: white;
+    }
+.container{
+    width: 80vw;
+    background-color: rgb(120, 118, 118);
+    margin: auto;
+    border-radius: 6px;
+    overflow: auto;
+}
+
+.line{
+    border: 2px solid red;
+    display: flex;
+}
+#image{position: relative;}
+#image img{
+    height: 90px;
+    width: 160px;
+    border-radius: 7px;
+}
+#image #duration{
+    background-color: #7d7d7d;
+    opacity: 3.77;
+    color: white;
+    width: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+    height: 20px;
+    position: absolute;
+    top: 66px;
+    right: 4px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 29px;
+    justify-content: center;
+    margin-left: 18px;
+}
+div a{
+    text-decoration: none;
+}
+.heading a{
+    font-size: 28px;
+    font-family: fangsong;
+}
+.detail_text{
+    display: grid;
+    grid-template-columns: 118px 87px 98px;
+    margin-top: -13px;
+    font-size: 15px;
+    font-family: math;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="line">
+            <div id="image"><img src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB0alxLSXCSEPITzWr-XXUiv1oglQ" alt="">
+                <div id="duration">31:20</div>
+            </div>
+            <div id="text">
+                <div class="heading"><a href="/">CSS Position Property | Sigma Web Development Course - Tutorial #28</a></div>
+                <div class="detail_text"><a href="/" id="cname" >Code With Paras</a><a href="/" id="views" >78.8k views</a><a href="/">2 months ago</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

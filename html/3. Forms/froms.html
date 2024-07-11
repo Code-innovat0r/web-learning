@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in the HTML</title>
+</head>
+<body>
+    <h1> We gone to create the form in the html </h1>
+
+    <form action="post">
+        <div>
+            <label for="username">Username :--  </label>  <!-- for contain the id of its input  -->
+            <input type="text" id="username" name="Username" placeholder="Enter your name">
+        </div>
+        <div>
+            <label for="contact">Contact Number :-- </label>
+            <input type="number" id="contact" name="Contact" placeholder="Enter your Contact">
+        </div>
+        <div> <!--Creating a radiobutton -->
+            <label>Select your gender</label><br>
+            <input type="radio" id="male" name="gender" value="male"> <!-- name is same in both the case so than u can select one at a time-->
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female"> <!-- value - will save in the data base -->
+            <label for="female">Female</label>  
+        </div>
+        <div> <!--Creating the checkbox -->
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Have you subscribed your youtube channel</label>
+        </div>
+        <div> <!--Creating the textarea -->
+            <label for="txtcomment">Enter your comment :--</label><br>
+            <textarea name="comment" id="txtcomment" placeholder="Comment..." cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <label>Select one of the fruit :-- </label>
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>a

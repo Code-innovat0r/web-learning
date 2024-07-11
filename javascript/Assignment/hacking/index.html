@@ -1,0 +1,57 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacking</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+        font-size: xx-large;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class="container">
+    </div>
+    <script>
+
+        setInterval(() => {
+            let cons = document.querySelector(".container").lastElementChild
+            if(cons.innerHTML.endsWith("...")){
+                cons.innerHTML = cons.innerHTML.slice(0, cons.innerHTML.length-3)
+            }
+            else{
+                cons.innerHTML = cons.innerHTML + "."
+            }
+        }, 1000);
+
+        let a = ["Initializing Hacking","Reading your Files", "Password file Detected", "Sending all password and Personal files to the Server", "Cleaning up", "Hacking Done"]
+        const wait=()=>{
+            return new Promise((resolve, reject)=>{
+                let random =  1+(Math.random()*6)
+                setTimeout(() => {
+                    resolve();
+                }, random*1000);
+            })
+        }
+        const additeam = async () => {
+            for (const element of a) {
+                await wait();
+                let cons = document.createElement("div")
+                cons.className="line"
+                cons.innerHTML = element
+                document.querySelector(".container").append(cons)
+            }
+        } 
+        additeam()
+
+        const last_check=()=>{
+            document.querySelector(".container").style.color = "blue"
+        }
+        last_check();
+    </script>
+</body>
+</html>

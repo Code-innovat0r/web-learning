@@ -1,0 +1,20 @@
+<!-- Dom(document object model) is the mapping of the html page through the javascript -->
+ <!-- Bom(browser object model) , if you work with the browser(except the document) then browser provide some additional function to work with, promt, alert, confirm are also the part of the BOM-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM(document object module)</title>
+</head>
+<body>
+    <div class="container"><div class="box"></div></div>
+    <script>
+        document.title = "Paras ka web page"
+        console.log(document.title)
+        console.log(document.body)
+        document.body.style.background = "green";
+    </script>
+</body>
+</html>

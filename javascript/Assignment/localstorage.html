@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concept of the local storage on the browser</title>
+</head>
+<body>
+    <div><button class="btn">Add notes</button></div>
+    <div class="note"></div>
+    <script>
+        // if(localStorage.getItem("name")){
+        //     a = localStorage.getItem("name")
+        //     document.write("Welcome "+ a)
+        // }
+        // else{
+        //     let a = prompt("Pls tell your name: ")
+        //     localStorage.setItem("name", a)
+        // }
+
+        // /* you can also store a object in the localstorage by converting them in string and again use it by converting into the object.. */
+        // a1  = {
+        //     a: 23,
+        //     b:45,
+        //     v: 67
+        // }
+        // localStorage.setItem("id", JSON.stringify(a1)) // id is the name for the string next argument convert it into the string
+        // let a = JSON.parse(localStorage.getItem("id")) //convert the given string to the object again
+        // console.log(a)
+
+        const add= ()=>{
+            if(localStorage.getItem("note")!=null){
+                document.querySelector(".note").append(localStorage.getItem("note"))
+            }
+        }
+        let i = 0;
+        if(i == 0){add(); i++}
+        function savenote(){
+            let a = prompt("Enter something to remember: ")
+            localStorage.setItem("note", a)
+            add()
+        }
+
+        document.querySelector(".btn").addEventListener("click", savenote)
+            
+    </script>
+</body>
+</html>
