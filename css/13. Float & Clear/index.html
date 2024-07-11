@@ -1,0 +1,39 @@
+<!-- 
+1. Float - is a property that allow the left-over space used by the other contents. It take the attribute like the left and right ...
+2. flow-root : is a display property that use to target the containt inside the tag to do not overflow and size of the container adjust autmatically as per the required space... 
+3. clear - when you didn't want float or any thing in your left and right and in the both side you use this. It take arguments like left, right, both ...
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Clear</title>
+</head>
+<style>
+    .cards{
+        border: 2px solid black;
+        display: flow-root; /*adjust the size of the box as per the requirement of content of it */
+    }
+    .card{
+        border: 2px solid red;
+    }
+    img{
+        float: left; /*allow the content to occupy the space in the right */
+    }
+
+    .card:nth-child(3){ /* select the n-1 th child of the card */
+        background-color: cyan;
+        clear: left; /* It will not allow the image float in its left side */
+    }
+</style>
+<body>
+    <div class="cards">
+        <img src="https://imgs.search.brave.com/Zma8BIiOaQNJDwJO3NADXzefq07h2bVVbYQVvUuKRt0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9kZWVw/YWkub3JnL3N0YXRp/Yy9pbWFnZXMvZG9s/cGhpbjIuc3Zn.svg" width="100px" alt="img">
+        <div class="card">card1</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa molestiae, ipsum iusto delectus et maiores sint nisi at repudiandae architecto impedit minima rerum nam officia porro minus totam magnam hic officiis dolorem libero quod nesciunt voluptate saepe? Quam, quia. Facilis qui suscipit aspernatur vitae tempore. Incidunt praesentium eum inventore. Sunt eligendi, vero provident quidem consequatur illum aperiam nemo consequuntur maxime doloribus, nobis mollitia ullam? Iure quis sit, nostrum distinctio vel molestias reiciendis numquam est veniam omnis quam illum libero quidem, neque consequatur. Nisi laboriosam aliquam, a deleniti aut consequatur quo repellendus ex porro non minima ratione voluptates sint, maxime totam eius qui distinctio! Quidem soluta non repellat hic temporibus blanditiis nobis reprehenderit maxime ab voluptatem est maiores natus consequatur nostrum totam obcaecati veniam numquam recusandae facilis saepe, tempore rem dolorum? Quas aperiam, nulla placeat tenetur nemo praesentium distinctio consequatur magnam nostrum molestias reprehenderit eum ratione beatae necessitatibus libero repellat repudiandae earum a quasi accusamus veniam quaerat consectetur! Ducimus velit nostrum delectus eius placeat libero enim officia rerum nihil ullam et veniam quibusdam temporibus porro eos, nam ipsam. Maiores, excepturi quae nisi ducimus fuga ex veritatis sapiente laudantium assumenda doloribus, velit laborum similique ipsum minus dolores cum quis recusandae consequatur illum facere? Explicabo alias ipsa eum unde quis? Dolor, voluptatem placeat accusantium accusamus eligendi tempora tenetur cupiditate veritatis id eaque animi ullam molestiae. Nostrum nobis inventore repudiandae a architecto modi voluptates laudantium nulla repellat dignissimos est sequi tenetur velit numquam magnam facilis ut tempore vitae corrupti praesentium tempora, reprehenderit qui. Ad at adipisci repellat enim doloribus. Nihil ratione mollitia fugiat earum maxime, dolorum consequatur quos cupiditate necessitatibus aliquam vel placeat tempore sapiente, ducimus corrupti, eos repellat aspernatur numquam ipsam praesentium? Beatae, accusamus quaerat dicta quod natus est molestiae tenetur atque sed nostrum consequatur repellendus voluptatum eum voluptates ipsa unde voluptatem at reiciendis consectetur? Laboriosam inventore provident hic nisi incidunt minima cupiditate corporis dolores omnis, veritatis eos doloribus ratione sint minus quibusdam eaque libero tempore tempora nihil facere possimus. Dolor temporibus quia sunt laudantium excepturi.</div>
+        <div class="card">card3</div>
+    </div>
+</body>
+</html>

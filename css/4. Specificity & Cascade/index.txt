@@ -1,0 +1,10 @@
+Specificity - means the giving the importance to the selector. eg, for the p tag if you define the inline css id css and then class css then the inline will be the top and then id and then class..
+but if you define color the three class and inherit all three class in the para then the color of the para will be of the lates defined class..
+
+inline style > ID Selector > class Selector > element selector > Universal Selector
+
+now if you write like
+h1.class{
+
+}
+the specitifity of this decome Specificity(h1) + Specificity(class)

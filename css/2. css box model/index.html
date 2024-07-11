@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        background-color: lightgreen;
+    }
+
+    .box1{
+        color: yellow;
+        padding: 10px;
+        margin: 25px;
+        border: 2px solid blue;
+        height: 200px;
+        box-sizing: border-box; /* Mean the total height of the box should be 200px, if we not mention it then the content height will be 200px and the padding, border will be added extra on the 200px, margin is the outer element so it will add in all condition ... */ 
+    } 
+
+    .box2{
+        color: red;
+        padding: 10px;
+        margin: 30px;
+        border: 2px solid blue;
+        height: 200px;
+        box-sizing: border-box; 
+    }
+
+    /*                                           MARGIN COLLAPSE                       */
+    /* In the above two box we have given the margin of 25px and 30px in each so b/w the box margin should be 55px but the margin is 30px only because as per the rule in the css if the margin of the two element coinsde each other then the margin b/w then will be of the maximum one */
+
+
+
+</style>
+<body>
+    <div class="box box1">I am the first box</div>
+    <div class="box box2">I am the second box</div>
+</body>
+</html>

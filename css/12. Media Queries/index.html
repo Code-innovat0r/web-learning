@@ -1,0 +1,55 @@
+<!--  Syntax of the Media Queries
+   @media not|only mediatype and (expression){ #Css code } 
+   
+   Media queries are help ful in the case of making website responsive to any device
+   -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+</head>
+<style>
+    body{
+        background-color: brown;
+    }
+
+    .box{
+        height: 200px;
+        width: 200px;
+        margin: 5px;
+        padding: 5px;
+        background-color: steelblue;
+    }
+    .boxes{
+        display: flex;
+        flex-direction: row;
+    }
+
+    @media only screen and (max-width: 600px){  /* when assessed on the screen and the max width of screen will be 500px then apply this css instead of other */
+        body{
+            background-color: blue;
+        }
+        .boxes{
+            flex-direction: column;
+        }
+    }
+
+    @media only screen and (orientation: landscape){ /* portrait means width<height, landscape means width>height*/
+        .boxes{
+            border: 10px solid green;
+        }
+    }
+</style>
+<body>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

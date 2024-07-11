@@ -1,0 +1,93 @@
+<!-- position are the inbuilt element of the css that help to move it with respect to the previous position ofthe element and to place one element on another
+
+position are of the three types: -
+1. Static :- default css, means tipical css design
+2. relative :- if we define relative.then we can use the top left right bottom tags for the movement of the box
+and it will move according to previous position. if it overlap then we use the z-index for it ...
+3. absolute :- 
+4. fixed :-
+5. sticky :-
+-->
+
+<!-- 
+In case of child define with the position absolute, if parent is define with transform, filter or prespecties instead of the position then also child will consider it as positioned..
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in css</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .box{
+        padding: 10px;
+        margin: 10px;
+        height: 300px;
+        border: 2px solid black;
+    }
+
+    .box1{
+        background-color: antiquewhite;
+        position: relative;
+        top: 15px; /* 12px margin from the top */
+        left: -10px; /* move in the left direction with them 10px */
+        /*Now it overlap the box 2  but if you want to box2 to look above you can use the z-index in box2 css*/
+
+    }
+
+    .box2{
+        position: relative;
+        z-index: 1; /* 1 or digit>1 says place above or the 0 says place below (default) */
+        background-color: aqua;
+    }
+
+    .box3{
+        /* You can try by doing the parent class position */
+        position: absolute; /* now it will search for the parent position element and move related to that and if not found then it will assume the (0, 0) as the previous position. In this case there is no parent with position. means parent class is not given any position if given then adjust as per that */
+        top: 20px; /*for top=0px it should touch the top but it will be 10px below because of the 10px margin given in the box class*/
+        left: 0px; /* same 10px difference */
+        background-color: rgb(165, 93, 232);
+    }
+
+    .box4{
+        background-color: aquamarine;
+        position: fixed;
+        bottom: -10px;
+        right: 0px;
+    }
+
+    .box5{
+        background-color: cadetblue;
+        height: 80px;
+        width: 100%;
+        position: sticky;
+        top: 0px; /* box is not inheriting box class so no need of the -10px to touch with the top */
+        left: 0px;
+        z-index: 2;
+    }
+
+    .parent{
+        padding: 43px;
+        margin: 40px;
+        border: 4px solid red;
+    }
+
+</style>
+<body>
+    <div class="parent">
+        <div class="box5">I am box 5</div> <!-- this is highly used for the navbars --> 
+        <div class="box box1">I am box 1</div>
+        <div class="box box2">I am box 2</div>
+        <div class="box box3">I am box 3</div>
+        <div class="box box4">I am box 4</div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Making</title>
+</head>
+<style>
+    *{
+        background-color: black;
+        margin: 0;
+        padding: 0;
+    }
+
+    .parent{
+        height: 220px;
+        width: 170px;
+        background-color: white;
+        position: absolute;
+        top: 89px;
+        left: 279px;
+    }
+
+    .box{
+        position: relative;
+        top: 3px;
+        margin: 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    span{
+        border: 1px solid grey;
+        border-radius: 6px;
+        font-size: 7px;
+        padding: 1px;
+        margin-bottom: 2px;
+        margin-left: 2px;
+        background-color: white;
+    }
+
+    .img{
+        background-color: white;
+        border-radius: 2px;
+        position: relative;
+        top: 2px;
+        left: 2px;
+        width: 140px;
+    }
+
+
+    #img{
+        height: 90px;
+        width: 140px;
+        border-radius: 5%;
+        background-color: white;
+    }
+
+    p{
+        font-size: 8px;
+        background-color: white;
+        border-radius: 10px;
+        /* text-align: center; */
+    }
+
+    h6{
+        background-color: white;
+        text-align: center;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+
+    button{
+        background-color: rgb(155, 223, 223);
+        color: rgb(63, 54, 236);
+        text-align: center;
+        padding: 3px;
+        font-size: 6px;
+        border-radius: 15px;
+        position: relative;
+        left: 50px;
+        bottom: 5px;
+        border: none;
+    }
+
+    #button:hover{
+        text-decoration: underline;
+        color: rgb(9, 2, 131);
+        cursor: pointer;
+    }
+
+</style>
+<body>
+    <div class="parent">
+        <div class="box">
+            <div class="img"><img src="img.jpg" alt="image" id="img"></div>
+            <span id="fighter">Fighter</span>
+            <span id="brave">Brave</span>
+            <h6>Lorem, ipsum dolor.</h6>
+            <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem cum voluptatibus, quasi facere nobis numquam est quaerat fuga odit eligendi!</p>
+            <button id="button" type="button">Read more</button>
+        </div>
+    </div>
+</body>
+</html>

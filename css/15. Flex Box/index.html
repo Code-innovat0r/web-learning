@@ -1,0 +1,76 @@
+<!-- Learn flex box from the video -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Concept</title>
+</head>
+<style>
+    .container{
+        border: 2px solid salmon;
+        display: flex;
+        height: 80vh;
+        /* justify-content: center; */
+        align-items: center; /* used for single row */
+        /* flex-direction: column-reverse; */
+        flex-wrap: wrap;
+        align-content: center; /* used for multiple row */
+        /* flex-flow: flex-direction wrap; */
+        flex-flow: row wrap-reverse;
+        gap: 14px; /* give gap between the content similar to margin*/
+        /* row-gap: ; */
+        /* column-gap: ; */
+
+    }
+    .item{
+        height: 12px;
+        width: 12px;
+        border: 2px solid rgb(73, 12, 171);
+        /* margin: 4px; */
+        color: black;
+        background-color: rgb(156, 111, 198);
+    }
+    .item1{
+        /* take the space of the given no of iteam */
+        /* flex-grow: 2; */
+        /* will shrink with given number of time multiple to other if need */
+        /* flex-shrink: 3; */
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>

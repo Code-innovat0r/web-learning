@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On selector</title>
+</head>
+<style>
+    /* Selecting the first line of the box class */
+    /* .box::first-line{
+        color: rgb(176, 9, 70);
+    }
+
+    .box1::first-letter{
+        font-weight: bolder;
+        color: blueviolet;
+    } */
+
+    /* select all the iteams in the tag */
+    .boxes *{ 
+        color: blue;
+        border: 2px solid red;
+    }
+    /* Select all the tags where data-color="primary" */
+    [data-color="primary"]{
+        padding-top: 45px;
+    }
+
+    /* grouping - writing css for the multiple tags at once */
+    div, .box, [data-color="primary"], .box1{
+        text-decoration: underline;
+    }
+
+    /* select the even childs */
+    .box:nth-child(even){
+        background-color: aqua;
+    }
+    /* select the odd childs */
+    .box1:nth-child(even){   /* it start with 4 as first three child of parent boxes are of box class */
+        background-color: burlywood;
+    }
+
+    /* ::before, ::after are used for the insertion of element dynamically through css, content take the text to insert */
+    .boxes::before{
+        content: "Paras is a trader"; 
+        color: blueviolet;
+    }
+
+    .boxes::after{
+        content: "He is also a good developer";
+        color: blue;
+    }
+
+    /* want some action on the selection of the text then use ::selection(this is for whole webpage), element::selection(this is for particular element) */
+    ::selection{
+        color: rgb(12, 222, 22);
+        background-color: rgb(54, 52, 52);
+    }
+
+    /* Targeting the placeholder in the input tags */
+    input::placeholder{
+        color: black;
+        background-color: chartreuse;
+        border-radius: 10px;
+    }
+
+</style>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">I am box 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, recusandae!</div>
+        <div class="box">I am box 2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, culpa!</div>
+        <div class="box">I am box 3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, culpa!</div>
+        <div class="box1">I am box in box1 class. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, culpa!</div>
+        <div class="box1">I am box in box1 class. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, culpa!</div>
+        <div class="box1">I am box in box1 class. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, culpa!</div>
+        <input type="text", placeholder="Type your name">
+        <input type="text", placeholder="Type your email">
+    </div>
+</body>
+</html>

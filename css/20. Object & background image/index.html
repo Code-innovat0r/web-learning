@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css object fir and position </title>
+</head>
+<style>
+    .container{
+        width: 800px;
+        height: 850px;
+        background-color: rgb(23, 160, 114);
+    }
+    img{
+        border: 2px solid black;
+        width: 400px;
+        height: 550px;
+        /* object-fit: cover; -> means crop or fit the image within the given width, height by maintaining the aspect ratio of image, given space must be covered... object-fit: contain; -> means fit complete image with aspect ratio no need of all the given space to be covered... object-fit: fill;-> simple adjust the image in the given height and width. there are no of other option explore */
+        object-fit: cover;
+        /* Specifies how an <img> or <video> should be positioned with x/y coordinates inside its "own content box"  vist -> https://www.w3schools.com/css/css3_object-position.asp */
+        object-position: -141px 1px;
+    }
+    /* --------------------------------------------------------------------------------------------------- */
+    /* Background properties of the box */
+    .parent{
+        width: 600px;
+        height: 600px;
+        background-image: url(https://imgs.search.brave.com/DYX-uORkEKkOh2LCzF34UXl9Q0Lj7ANa-0yoGwlAVaM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXktcGljdHVyZS5j/by51ay9keW5hbWlj/aW1hZ2UvcHJvZHVj/dC9saWJyYXJ5aW1h/Z2VzL2ltYWdlMi80/NjM1L3Bob3RvYm9v/ay0xLXByb2R1Y3Qt/bW9iaWxlLWRlc2t0/b3AtZ2VuZXJhbC53/ZWJw);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        margin: 60px;
+        border: 2px solid red;
+    }
+</style>
+<body>
+    <div class="container">
+        <img src="https://imgs.search.brave.com/4v_uJS_4MCQolvuw6AlRiP1uo7gQsrKFsEmLkbAIDY4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NzU5MzYxMjM0NTIt/YjY3YzMyMDNjMzU3/P2ZtPWpwZyZ3PTMw/MDAmYXV0bz1mb3Jt/YXQmZml0PWNyb3Am/cT02MCZpeGxpYj1y/Yi00LjAuMyZpeGlk/PU0zd3hNakEzZkRC/OE1IeHpaV0Z5WTJo/OE1ueDhhVzFoWjJW/OFpXNThNSHg4TUh4/OGZEQT0" alt="img">
+    </div>
+
+    <!-- Background of the css -->
+    <div class="parent">
+        I am Paras Kumar Pandey. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga deleniti illum alias, saepe, dolorem laudantium unde impedit officiis neque perspiciatis accusantium placeat expedita magni nihil eum obcaecati temporibus accusamus nulla eveniet numquam. Unde facilis consequuntur quibusdam cumque reprehenderit, commodi corrupti architecto illum omnis voluptatibus at labore aut suscipit aliquid harum libero quam! Explicabo, facere ipsam tenetur animi, exercitationem excepturi sit vel accusantium nulla possimus corporis necessitatibus ullam quia. Facilis nam aliquam dolorem quibusdam, veritatis non eveniet quasi rem molestiae voluptatum distinctio quod. Aliquam aut deserunt, expedita dignissimos perferendis enim, sed quod nisi incidunt delectus porro sequi impedit velit earum officia!
+    </div>
+</body>
+</html>

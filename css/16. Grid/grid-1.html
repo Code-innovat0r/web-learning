@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+    .container{
+        border: 2px solid yellow;
+        display: grid;
+        grid-template-columns: 100px 100px; /*Create two columns of the 50px*/
+        grid-template-rows: 100px 100px 100px; /*Create three rows of the 50px*/
+        /* grid-template-rows: 1fr 2fr 1fr; fr is the unit of grid means fraction divide the view port into that fraction */
+        
+    }
+    .items{
+        border: 2px solid red;
+        height: 50px;
+        width: 50px;
+    }
+    .item-4{  /* place the box 4 in the first cell */
+        grid-row: 1/2; /* place between row-line 1 to 2 */
+        grid-column: 1/2; /* place between columns-line 1 to 2 */
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items item-4">4</div>
+        <div class="items">5</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+</head>
+<style>
+    .box{
+        width: 20vh;
+        height: 20vh;
+        border: 2px solid black;
+        overflow: scroll;  /* scroll will be there in both the xy direction scroll bar will be there if there is no need of it  */
+        overflow: auto; /* intellijentily manage the scroll bar present when it need or remove if not in use */
+        /* overflow-y: hidden;  hide the scroll bar of the y  
+        overflow-x: hidden; */
+        
+    }
+</style>
+<body>
+   <div class="box">I am a good boy. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium suscipit deserunt sint cum quis impedit rem alias iste aut. Dolorum aliquam perferendis architecto sed necessitatibus. Inventore vel beatae, maxime quibusdam error similique nobis sunt eius, ab magnam reiciendis fugit, doloremque voluptatum voluptate expedita eveniet dicta?</div> 
+</body>
+</html>

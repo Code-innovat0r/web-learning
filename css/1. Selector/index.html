@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Class Selector */
+    .red{
+        background-color: red;
+    }
+
+    /* Id Selecetor */
+    #green{
+        background-color: green;
+    }
+
+    /* Child Selector - changes will be there where the p is just inside the div tag */
+    div > p{
+        background-color: aqua;
+    }
+
+    /* Descendent Selector - there should be span inside a div only that matters*/
+    div span{
+        border: 2px solid red;
+    }
+
+    /* Universal selector */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Pseudo Selector */
+    a:visited{
+        color: yellow;
+    }
+
+    a:link{
+        color: green;
+    }
+
+    a:active{
+        background-color: aqua;
+    }
+
+    a:hover{
+        background-color: lightgreen;
+    }
+
+    p:first-child{   /* Where ever the p is the first child this change will take place */
+        background-color: aqua;
+    }
+
+</style>
+<body>
+    <div class="red">I am div with class red <p>I a Paragraph inside div</p></div>
+    <div id="green">I am div with id green <article><span>I am in span tag</span></article>
+    </div>
+
+    <a target="_blank" href="https://google.com">Go to google</a>
+    <a href="https://facebook.com">Go to facebook</a>
+
+    <main>
+        <p>I am first</p>
+        <p>I am Second</p>
+    </main>
+
+</body>
+</html>

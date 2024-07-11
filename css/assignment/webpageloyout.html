@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paras is a developer</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+</style>
+<style>
+    *{
+        margin: 0;padding: 0;
+        font-family: "Poppins", sans-serif;
+    }
+    body{
+        background-color: rgb(244, 210, 216);
+    }
+    header{
+        position: sticky;
+        top: 0px;
+    }
+    ul{
+        display: flex;
+        background-color: rgb(236, 86, 213);
+    }
+    ul li{
+        list-style: none;
+        padding: 2px;
+        margin-left: 5px;
+        font-weight: bold;
+        font-size: 5px;
+    }
+
+    /* -------------------------------------- */
+
+    .parentbox{
+        background-color: yellow;
+        border: 2px solid black;
+        width: 100%;
+        height: 80vh;
+        display: flex;
+    }
+    .box1{
+        background-color: aqua;
+        border: 2px solid purple;
+        width: 30%;
+        height: 40vh;
+        margin: 30px;
+        overflow: auto;
+    }
+    .box2{
+        background-color: rgb(17, 89, 89);
+        border: 2px solid rgb(41, 8, 41);
+        width: 30%;
+        height: 40vh;
+        overflow: auto;
+        margin: 30px;
+    }
+    .lowerbody{
+        border: 5px solid rgb(24, 83, 24);
+        border-radius: 60px;
+        text-align: center;
+        margin: 40px;
+    }
+    /* ------------------------------- */
+    .chatbox{
+        position: fixed;
+        z-index: 1;
+        bottom: 10px;
+        left: 270px;
+    }
+    img{
+        border-radius: 10px;
+    }
+
+    /* ------------------------------- */
+
+    footer{
+        border: 2px solid grey;
+        background-color: white;
+        font-size: 6px;
+    }
+
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="parentbox">
+        <div class="box1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, iste!</div>
+        <div class="box2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
+    </div>
+    <div class="lowerbody">This is developed by the Paras Kumar Pandey</div>
+    <div class="chatbox">
+        <img src="img.jpg" width="15px" height="15px" alt="img">
+    </div>
+    <footer>
+        <div id="footer">
+            This is the copyright &copy;. All rights are reserved..
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!--  Transition is the property give eye appeling movement while moving from the one to another property of the element -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition in CSS</title>
+</head>
+<style>
+    .container{
+        background-color: antiquewhite;
+        width: 40vw;
+        height: 50vh;
+    }
+    .box{
+        background-color: aquamarine;
+        width: 5vw;
+        height: 4vh;
+        transition-property: background-color, transform; /* on the given property apply transition, and "all" for all changes made while transforming */
+        transition-duration: 3s; /*Timing for the transformation*/
+        transition-timing-function: ease-in; /*how to progress the transition, there are no of option in it*/
+        transition-delay: 2s; /* timing gap between the order and the execution*/
+    }
+
+    .transition{ /*overwriting the property of box so it will change from box defined to transition define and in between this transition property activate*/
+        transform: translateX(10vw) translateY(10vh) scale(2);
+        background-color: blue;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box transition"></div>
+    </div>
+</body>
+</html>

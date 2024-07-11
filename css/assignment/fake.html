@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box rotating</title>
+</head>
+<style>
+    .container{
+        width: 80vw;
+        height: 90vh;
+        background-color: aquamarine;
+        position: relative;
+    }
+    .box{
+        height: 30px;
+        width: 30px;
+        background-color: red;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        animation: rotate 2s ease-out .1s infinite alternate,
+        transformX 15s ease-out infinite alternate,
+        transformY 2s ease-out infinite alternate;
+
+    }
+    @keyframes transformX {
+        from{
+            left: 0;
+        }
+        to{
+            left: 100%;  
+        }
+    }
+    @keyframes transformY {
+        from{
+            bottom: 0;
+        }
+        to{
+            bottom: 98%;
+        }
+    }
+    @keyframes rotate {
+        from{transform: rotate(0);}
+        to{transform: rotate(360deg);}
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!-- display have number of the differnt propertiies in the css here some of them are mentioned -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box {
+        border: 2px solid blue;
+        display: inline;
+        /* In the case of the inline you are not allowed to use margin or padding for top and width attribute, to use this all put dispaly = inline-block */
+        margin: 30px;
+        padding: 30px;
+        width: 200px;
+    }
+
+    .box1{
+        background-color: aqua;
+        display: none; /* Clear the space and remove the element of the object */
+        visibility: hidden; /* only remove the elements without making any changes in the space occupied by it  */
+    }
+</style>
+
+<body>
+    <div class="box">
+        I am the box
+    </div>
+
+    <div class="box1 box">I am the box 1</div>
+
+
+</body>
+
+</html>

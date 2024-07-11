@@ -1,0 +1,102 @@
+<!-- supposse you have created a div with the class container and within that you have defined paragraph tag 
+, now in the container css you have given the font-size 18px and then in the '.container p{font-size = 2em}' you have defined now the paragragh tag inherit the older font size and multiply with the 2 and that the font size of the text in the paragraph.. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing in the css</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        box-sizing: border-box;
+        border: 2px solid black;
+        height: 80vh; /* 80 - percent of the height of the view port of the user window */
+        width: 80vw;
+        margin: 20px auto; /* margin auto center only the block element not the inline element */
+        background-color: aquamarine;
+    }
+
+    .container{
+        /* height: 80vh; */
+        min-height: 80vh; /* we are saying that the min height should be 80vh but the max height will be as per the length of content adjust itself expand text in container to see changes*/
+        width: 80vw;
+        font-size: 16px;
+        border: 2px solid purple;
+        margin: 10px auto;
+        background-color: aquamarine;
+    }
+
+    html{
+        font-size: 16px; /* default = 12px */
+    }
+
+    .container p{
+        font-size: 1.8em; /* for 'rem' means the that much time of the default font size in the html
+        , default one can we changed using the html selector */
+        width: 50%; /* means the 50% of the width of the parent that is the container */
+    }
+
+
+    .con{
+        height: 80hv;
+        width: 80vw;
+        background-color: palevioletred;
+        border: 2px solid black;
+    }
+
+    .con > div{
+        color: aquamarine;
+        width: 50%;
+    }
+
+    .con > div > div {
+        width: 50%;
+    }
+
+    #paras{
+        color: purple;
+    }
+
+    .mycont{
+        background-color: rgb(237, 160, 160);
+        box-sizing: border-box;
+        margin: 10px auto;
+        border: 2px solid black;
+        color: yellow;
+        font-size: 22px;
+        width: 100vmin; /* for the laptop, width of screen > then height so vmin=vh, similarly vmax = vw opposite for phones and depend on the width and height of the device screen */
+
+    }
+
+</style>
+<body>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quaerat, ipsum tenetur eaque aspernatur laborum repudiandae corrupti? Repudiandae, repellat eum architecto totam doloribus asperiores nesciunt sapiente odio commodi optio earum.</p>
+
+    </div>
+    <div class="container"><p>Cum corporis expedita, veniam cupiditate unde placeat hic, maiores culpa molestiae natus in! Repellendus voluptas fugiat magnam necessitatibus, officia doloribus mollitia incidunt reprehenderit numquam aperiam tenetur ut non adipisci voluptatum dicta voluptatem illo labore delectus recusandae esse corporis quod facere error? Sint, cum nesciunt!
+         consectetur adipisicing elit. Tempora, mollitia?
+        </p></div>
+
+    <div class="mycont"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit rerum veniam, autem asperiores nulla repudiandae, illum fugiat pariatur quis reprehenderit consequatur vero consectetur, aspernatur nihil? Quia itaque quos, exercitationem repudiandae quam perferendis iure quibusdam possimus repellendus vero animi eaque voluptatum aliquid labore corrupti cum voluptate optio sint saepe nihil illo.</p></div>
+
+
+    <div class="con">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem natus, ullam ut cumque ea deleniti numquam impedit architecto sit soluta nihil perspiciatis nostrum sequi tenetur ad asperiores magnam inventore repudiandae.
+            <div id="paras">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis itaque, possimus explicabo sint facilis enim voluptatum magni assumenda accusamus debitis officiis odit? Eum obcaecati cupiditate vel aliquid repellat consequuntur officiis!
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

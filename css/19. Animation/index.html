@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+</head>
+<style>
+    .container{
+        background-color: blueviolet;
+        height: 40vh;
+        width: 30vw;
+    }
+    .box{
+        background-color: blue;
+        height: 5vh;
+        width: 6vw;
+        animation-name: paras2, paras;
+        animation-duration: 10s;
+        animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        animation-iteration-count: 3; /* infinity for the infinite time animation */
+        animation-delay: 2s;
+        animation-direction: alternate;
+        /* animation-play-state: paused; OR running, this is used to stop the animation or run it from where it stop */
+        /* one line animation defining */
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        /* animation: paras 3s ease-in-out 3 alternate, 
+                      paras2 3s ease-out 3 alternate-reverse; */
+        /* fill-mode, take two inputs forward:- retain the final position, dackward:- regain the intial css */
+    }
+    @keyframes paras {  /*paras is the name for the animation*/
+        from{
+
+        }
+        to{
+            transform: translateX(1000px) skew(45deg);
+        }
+    }
+
+    @keyframes paras2 {
+        0%{transform: rotate(50deg);}
+        20%{transform: rotate(100deg);}
+        50%{transform: rotate(200deg);}
+        80%{transform: rotate(300deg);}
+        100%{transform: rotate(340deg);}
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

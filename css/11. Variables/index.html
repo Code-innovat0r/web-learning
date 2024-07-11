@@ -1,0 +1,62 @@
+<!-- CSS Variable store the values that is used repetadly.css variable are of the two types
+ 1. Global : this variable is define under the root 
+ 2. local : this variable is define inside the tag and only accessiable in that, it can be overwrite of global variable
+  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+
+<style>
+
+    :root{           /* :root tag is used to define the global variables */
+        --color: pink;
+        --defaultpadding: 10px;
+        --defaultfontsize: 6px;
+    }
+
+
+    nav{
+        background-color: var(--color);   /* accessing the global variable */
+    }
+
+    ul{
+        
+        display: flex;
+        list-style: none;
+    }
+
+    li:first-child{
+        --color: purple;  /* redefining the global variable in the tag become local variable */
+        background-color: var(--color, green); /* colour will be purple and if in case variable not found it will use the green color which is optional to give */
+
+    }
+     
+    li{
+        padding: var(--defaultpadding, 20px);
+    }
+
+    .para{
+        --paracolor: skyblue;
+        background-color: var(--paracolor);
+        font-size: var(--defaultfontsize);
+    }
+
+</style>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>contact</li>
+            <li>view</li>
+        </ul>
+    </nav>
+    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto necessitatibus adipisci fugit dolorem quisquam voluptates repudiandae corporis, a excepturi velit distinctio quidem tempora sapiente enim reprehenderit, accusantium ducimus eum sunt quaerat labore ipsum cumque totam unde explicabo? Non, quaerat fugit!</p>
+</body>
+</html>

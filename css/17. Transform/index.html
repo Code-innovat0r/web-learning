@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation</title>
+</head>
+<style>
+    *{
+        margin: 0;padding: 0;
+    }
+    .box{
+        height: 50px;
+        width: 50px;
+        background-color: antiquewhite;
+        border: 2px solid black;
+        /* transform: rotate(.25turns); rotate .25 of 1 turn , you can also give in  degrees */
+        transform-origin: (50%, 50%);  /* 50% means the center of the iteam, (0%, 0%) is the orgin */
+        /* transform: rotate3d(.125deg);  rotate with the 45 deg in the 3d, similar for x,y,z axis */
+        /* transform: scale(1.6); increase the length by the given multiple, similar for 3d,x,y,z axis */
+        /* transform: skew(45deg); make italic from center axis by 45 deg, similar for x,y */
+        /* transform: translate(20%); shift with the 20% of its width and height, similar for x,y */
+        transform: skew(20deg) translateX(-20%) rotateX(.39deg); /*Use multiple transform at once*/
+
+ 
+    }
+</style>
+<body>
+    
+</body>
+</html>
