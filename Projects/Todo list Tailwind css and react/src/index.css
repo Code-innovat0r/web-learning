@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: rgb(249, 227, 249);
+}
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 16
+}
+
+@media (max-width: 1024px) {
+  .todos{
+    max-height: 65vh;
+  }
+
+  .input-box{
+    width: 79%
+  }
+
+}
+@media (max-width: 825px) {
+  .todos{
+    max-height: 60vh;
+  }
+
+}
+
+@media (max-width: 380px) {
+  .todos{
+    max-height: 45vh;
+  }
+  .add-text{
+    text-align: center;
+  }
+  .input-box{
+    width: 102%
+  }
+  .add {
+    margin-top: 6px;
+    text-align: center;
+    width: 31%;
+    margin: 9px 0px -9px 78px;
+  }
+  .todo{
+    flex-direction: column;
+    margin: 12px 0;
+  }
+  .sepration{
+    display: inherit;
+  }
+  .todo .text{
+    width: 100%;
+  }
+
+  .buttons{
+    width: 40px;
+    gap: 0px;
+    padding: 0;
+    margin: 0;
+
+  }
+  .heading h1{
+    font-size: 20px;
+  }
+}
