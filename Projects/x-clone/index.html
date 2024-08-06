@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<style>
+    /* Include this style in your main CSS file or inside a <style> tag */
+    .scrollbar::-webkit-scrollbar {
+      width: 8px;
+    }
+    .scrollbar::-webkit-scrollbar-thumb {
+      background-color: #6b7280;
+      border-radius: 10px;
+    }
+    .scrollbar::-webkit-scrollbar-track {
+      background-color: #f3f4f6;
+    }
+</style>
+
+<body class="bg-black text-white scrollbar"> 
+    <div class="flex container w-3/4 my-5 mx-auto">
+        <!-- first box html -->
+
+        <div class="first w-[45%]">
+            <div class="logo">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="w-8 invert mx-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                        <g>
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </g>
+                </svg>
+            </div>
+            <div class="sidebar">
+                <ul class="flex flex-col text-2xl py-4"> 
+                    <li
+                    class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                    <span class="text-3xl material-symbols-outlined"> home </span> <span
+                        class="hidden md:block">Home</span>
+                </li>
+                <li
+                    class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                    <span class="text-3xl material-symbols-outlined"> search </span><span
+                        class="hidden md:block">Explore</span>
+                </li>
+                <li
+                    class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                    <span class="text-3xl material-symbols-outlined"> notifications </span><span
+                        class="hidden md:block">Notifications</span>
+                </li>
+                <li
+                    class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                    <span class="text-3xl material-symbols-outlined"> message </span><span
+                        class="hidden md:block">Grok</span>
+                </li>
+                <li
+                    class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                    <span class="text-3xl material-symbols-outlined"> lists </span><span
+                        class="hidden md:block">Lists</span>
+                </li>
+                <li
+                    class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                    <span class="text-3xl material-symbols-outlined"> bookmarks </span><span
+                        class="hidden md:block">Bookmarks</span>
+                </li>
+                <li
+                    class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                    <span class="text-3xl material-symbols-outlined"> Group </span><span
+                        class="hidden md:block">Communities</span>
+                </li>
+                <li
+                    class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                    <span class="text-3xl material-symbols-outlined"> box </span><span
+                        class="hidden md:block">Premium</span>
+                </li>
+                <li
+                    class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                    <span class="text-3xl material-symbols-outlined"> person </span><span
+                        class="hidden md:block">Profile</span>
+                </li>
+                <li
+                    class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                    <span class="text-3xl material-symbols-outlined"> pending </span><span
+                        class="hidden md:block">More</span>
+                </li>
+                <li>
+                    <div class="button w-full text-center my-4">
+                        <button
+                            class="hidden md:block bg-[#1d9bf0] px-20 text-xl rounded-full py-3 text-white">Post</button>
+                        <button class="md:hidden bg-[#1d9bf0]  px-2 md:px-4 text-xl rounded-full py-1 md:py-3 text-white">
+                            <span class="material-symbols-outlined">
+                                edit
+                            </span>
+                        </button>
+                    </div>
+                </li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <!-- first box(first class) html ended -->
+         <!-- second box html -->
+
+        <div class="second h-[100vh] overflow-x-hidden scrollbar w-[80%] border-[1px] border-x-gray-500 border-y-black relative">
+            <div class="head font-bold flex justify-around items-center">
+                <div class="absolute h-[2px] w-[65px] bg-cyan-500 top-[36px] left-[18.6%]"></div>
+                <div class="w-[50%] text-center">For You</div>
+                <div class="w-[50%] flex justify-evenly gap-20">
+                    <div>Following</div>
+                    <div><span class="material-symbols-outlined">settings</span></div>
+                </div>
+            </div>
+            <div class="h-[1px] bg-slate-600 w-[100%] mt-3"></div>
+
+            <div class="happining m-6 mb-2">
+
+                <div class="flex gap-4 w-full" >
+                    <img src="medium.png" class="w-[40px] h-[40px] rounded-[20px]" alt="img">
+                    <input type="text" class="text-[22px] bg-transparent outline-none border-none" placeholder="What is Happening?">
+                </div>
+                <div class="text-blue-500 w-[60%] gap-3 flex items-center mt-2 justify-center"><span class="material-symbols-outlined">globe</span>Every one can Reply</div>
+                <div class="h-[1px] bg-slate-600 mx-4 my-2"></div>
+                <div class="mx-4 my-2 flex justify-between items-center">
+                    <div class="icons flex justify-center items-center gap-2">
+                        <span class="material-symbols-outlined text-blue-500">home</span>
+                        <span class="material-symbols-outlined text-blue-500">folder</span>
+                        <span class="material-symbols-outlined text-blue-500">search</span>
+                        <span class="material-symbols-outlined text-blue-500">image</span>
+                        <span class="material-symbols-outlined text-blue-500">globe</span>
+                        <span class="material-symbols-outlined text-blue-500">menu</span>
+                    </div>
+                    <button class="bg-sky-600 py-1 px-4 rounded-full text-white">Post</button>
+                </div>
+            </div>
+            <div class="h-[1px] bg-slate-600 w-[100%]"></div>
+            <div class="text-center text-sky-700 my-2"> Show all posts </div>
+            <div class="h-[.5px] bg-slate-600 w-[100%]"></div>
+
+
+
+            <!-- first poste -->
+
+            <div class="flex m-4 gap-3">
+                <img src="medium.png" class="w-[40px] h-[40px] rounded-[20px]" alt="img">
+                <div>
+                    <div class="flex justify-between">
+                        <div class="flex gap-2 text-[12px] items-center">
+                            <strong class="flex items-center">Code Demon<span class="material-symbols-outlined text-blue-500">verified</span></strong>
+                            <span>@codedemon</span>
+                            <span>11h</span>
+                        </div>
+                        <div><span class="material-symbols-outlined">steppers</span></div>
+                    </div>
+                    <div>
+                        <p class="text-[13px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, voluptatibus?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-[100%] flex justify-center items-center">
+                <div class="w-[85%] flex justify-evenly items-center">
+                    <div class="flex justify-center gap-1">
+                        <span class="material-symbols-outlined">message</span>
+                        <span class="text-sm text-slate-500">234k</span>
+                    </div>
+                    <div class="flex justify-center gap-1">
+                        <span class="material-symbols-outlined">refresh</span>
+                        <span class="text-sm text-slate-500">234k</span>
+                    </div>
+                    <div class="flex justify-center gap-1">
+                        <span class="material-symbols-outlined">favorite</span>
+                        <span class="text-sm text-slate-500">234k</span>
+                    </div>
+                    <div class="flex justify-center gap-1">
+                        <span class="material-symbols-outlined">share</span>
+                        <span class="text-sm text-slate-500">234k</span>
+                    </div>
+                </div>
+                <div class="w-[15%] text-right">
+                    <span class="material-symbols-outlined">bookmark</span>
+                    <span class="material-symbols-outlined">upload</span>
+                </div>
+            </div>
+
+            <div class="h-[.5px] bg-slate-600 w-[100%] my-4"></div>
+
+            <!-- second post -->
+
+            <div class="flex m-4 gap-3">
+                <img src="medium.png" class="w-[40px] h-[40px] rounded-[20px]" alt="img">
+                <div>
+                    <div class="flex justify-between">
+                        <div class="flex gap-2 text-[12px] items-center">
+                            <strong class="flex items-center">Code Demon<span class="material-symbols-outlined text-blue-500">verified</span></strong>
+                            <span>@codedemon</span>
+                            <span>11h</span>
+                        </div>
+                        <div><span class="material-symbols-outlined">steppers</span></div>
+                    </div>
+                    <div>
+                        <p class="text-[13px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, voluptatibus?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="poster">
+                <img class="rounded-lg w-[80%] m-auto my-2" src="https://imgs.search.brave.com/UtkzQrTHtp6Df58LWI3xzxRsFQRaixB_5e7BrNq4E7Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9nbG9i/YWwuZGlzY291cnNl/LWNkbi5jb20vYnVz/aW5lc3M2L3VwbG9h/ZHMvaW5hdHVyYWxp/c3Qvb3B0aW1pemVk/LzNYLzEvOS8xOWFi/MDQwOWY5N2Y0OWI3/MTQ1YzZiNDYyODM4/ZjdlY2M5ZDU2YzMx/XzJfNTAweDUwMC5q/cGVn" alt="">
+            </div>
+
+            <div class="w-[100%] flex justify-center items-center">
+                <div class="w-[85%] flex justify-evenly items-center">
+                    <div class="flex justify-center gap-1">
+                        <span class="material-symbols-outlined">message</span>
+                        <span class="text-sm text-slate-500">234k</span>
+                    </div>
+                    <div class="flex justify-center gap-1">
+                        <span class="material-symbols-outlined">refresh</span>
+                        <span class="text-sm text-slate-500">234k</span>
+                    </div>
+                    <div class="flex justify-center gap-1">
+                        <span class="material-symbols-outlined">favorite</span>
+                        <span class="text-sm text-slate-500">234k</span>
+                    </div>
+                    <div class="flex justify-center gap-1">
+                        <span class="material-symbols-outlined">share</span>
+                        <span class="text-sm text-slate-500">234k</span>
+                    </div>
+                </div>
+                <div class="w-[15%] text-right">
+                    <span class="material-symbols-outlined">bookmark</span>
+                    <span class="material-symbols-outlined">upload</span>
+                </div>
+            </div>
+
+            <div class="h-[.5px] bg-slate-600 w-[100%] my-4"></div>
+
+            <!-- third post -->
+
+            <div class="flex m-4 gap-3">
+                <img src="medium.png" class="w-[40px] h-[40px] rounded-[20px]" alt="img">
+                <div>
+                    <div class="flex justify-between">
+                        <div class="flex gap-2 text-[12px] items-center">
+                            <strong class="flex items-center">Code Demon<span class="material-symbols-outlined text-blue-500">verified</span></strong>
+                            <span>@codedemon</span>
+                            <span>11h</span>
+                        </div>
+                        <div><span class="material-symbols-outlined">steppers</span></div>
+                    </div>
+                    <div>
+                        <p class="text-[13px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, voluptatibus?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="poster">
+                <img class="rounded-lg w-[80%] m-auto my-2" src="https://imgs.search.brave.com/UtkzQrTHtp6Df58LWI3xzxRsFQRaixB_5e7BrNq4E7Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9nbG9i/YWwuZGlzY291cnNl/LWNkbi5jb20vYnVz/aW5lc3M2L3VwbG9h/ZHMvaW5hdHVyYWxp/c3Qvb3B0aW1pemVk/LzNYLzEvOS8xOWFi/MDQwOWY5N2Y0OWI3/MTQ1YzZiNDYyODM4/ZjdlY2M5ZDU2YzMx/XzJfNTAweDUwMC5q/cGVn" alt="">
+            </div>
+
+            <div class="w-[100%] flex justify-center items-center">
+                <div class="w-[85%] flex justify-evenly items-center">
+                    <div class="flex justify-center gap-1">
+                        <span class="material-symbols-outlined">message</span>
+                        <span class="text-sm text-slate-500">234k</span>
+                    </div>
+                    <div class="flex justify-center gap-1">
+                        <span class="material-symbols-outlined">refresh</span>
+                        <span class="text-sm text-slate-500">234k</span>
+                    </div>
+                    <div class="flex justify-center gap-1">
+                        <span class="material-symbols-outlined">favorite</span>
+                        <span class="text-sm text-slate-500">234k</span>
+                    </div>
+                    <div class="flex justify-center gap-1">
+                        <span class="material-symbols-outlined">share</span>
+                        <span class="text-sm text-slate-500">234k</span>
+                    </div>
+                </div>
+                <div class="w-[15%] text-right">
+                    <span class="material-symbols-outlined">bookmark</span>
+                    <span class="material-symbols-outlined">upload</span>
+                </div>
+            </div>
+
+            <div class="h-[.5px] bg-slate-600 w-[100%] my-4"></div>
+
+
+        </div>
+
+        <!-- center box(second class) html ended -->
+         <!-- right box html -->
+
+        <div class="third px-4 w-[50%]">
+
+            
+            <div class="search py-2 bg-gray-900 rounded-[23px] flex gap-5 justify-center my-auto">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+                <div>
+                    <input type="text" class="bg-transparent outline-none border-none text-md"  placeholder="Search here...">
+                </div>
+            </div>
+
+            <div class="whatHappen my-4 bg-gray-900 rounded-[15px] h-[50vh] p-2">
+                <h2 class="font-bold">What's Happening</h2>
+                <div class="h-[.5px] bg-gray-500 my-6"></div>
+                <div class="happen1 flex justify-between">
+                    <div>
+                        <h4>Tranding World</h4>
+                        <span class="block text-[12px] font-light">Paras</span>
+                        <span class="block text-[12px] font-light">400M posts</span>
+                    </div>
+                    <img class="w-[50px] h-[50px] rounded-[20px]" src="https://upload.wikimedia.org/wikipedia/commons/c/cb/The_Blue_Marble_%28remastered%29.jpg" alt="">
+                </div>
+                <div class="h-[.5px] bg-gray-500 my-3"></div>
+                <div class="happen1 flex justify-between">
+                    <div>
+                        <h4>Tranding World</h4>
+                        <span class="block text-[12px] font-light">Paras</span>
+                        <span class="block text-[12px] font-light">400M posts</span>
+                    </div>
+                    <img class="w-[50px] h-[50px] rounded-[20px]" src="https://upload.wikimedia.org/wikipedia/commons/c/cb/The_Blue_Marble_%28remastered%29.jpg" alt="">
+                </div>
+                <div class="h-[.5px] bg-gray-500 my-3"></div>
+                <div class="happen1 flex justify-between">
+                    <div>
+                        <h4>Tranding World</h4>
+                        <span class="block text-[12px] font-light">Paras</span>
+                        <span class="block text-[12px] font-light">400M posts</span>
+                    </div>
+                    <img class="w-[50px] h-[50px] rounded-[20px]" src="https://upload.wikimedia.org/wikipedia/commons/c/cb/The_Blue_Marble_%28remastered%29.jpg" alt="">
+                </div>
+                <div class="h-[.5px] bg-gray-500 my-3"></div>
+                <div class="mt-8"><a href="#" class="text-blue-500 flex justify-start ">Show More..</a></div>
+            </div>
+
+            <div class="who-to-follow my-4 bg-gray-900 rounded-[15px] h-[40vh] p-2">
+                <h2 class="font-bold">Who To Follow</h2>
+                <div class="follower flex justify-between mt-4">
+                    <div class="follower-detail flex gap-2 items-center">
+                        <img src="medium.png" class="w-[40px] h-[40px] rounded-[20px]" alt="">
+                        <div>
+                            <h3>Paras Kumar</h3>
+                            <span class="text-[12px]">@code-demon</span>
+                        </div>
+                    </div>
+                    <button class="bg-white text-black font-bold my-2 px-4 rounded-full hover:bg-gray-500 hover:text-white">
+                        Follow
+                      </button>
+                </div>
+                <div class="follower flex justify-between mt-4">
+                    <div class="follower-detail flex gap-2 items-center">
+                        <img src="medium.png" class="w-[40px] h-[40px] rounded-[20px]" alt="">
+                        <div>
+                            <h3>Paras Kumar</h3>
+                            <span class="text-[12px]">@code-demon</span>
+                        </div>
+                    </div>
+                    <button class="bg-white text-black font-bold my-2 px-4 rounded-full hover:bg-gray-500 hover:text-white">
+                        Follow
+                      </button>
+                </div>
+                <div class="follower flex justify-between mt-4">
+                    <div class="follower-detail flex gap-2 items-center">
+                        <img src="medium.png" class="w-[40px] h-[40px] rounded-[20px]" alt="">
+                        <div>
+                            <h3>Paras Kumar</h3>
+                            <span class="text-[12px]">@code-demon</span>
+                        </div>
+                    </div>
+                    <button class="bg-white text-black font-bold my-2 px-4 rounded-full hover:bg-gray-500 hover:text-white">
+                        Follow
+                      </button>
+                </div>
+                <div class="follower flex justify-between mt-4">
+                    <div class="follower-detail flex gap-2 items-center">
+                        <img src="medium.png" class="w-[40px] h-[40px] rounded-[20px]" alt="">
+                        <div>
+                            <h3>Paras Kumar</h3>
+                            <span class="text-[12px]">@code-demon</span>
+                        </div>
+                    </div>
+                    <button class="bg-white text-black font-bold my-2 px-4 rounded-full hover:bg-gray-500 hover:text-white">
+                        Follow
+                      </button>
+                </div>
+            </div>
+
+            <div class="footer flex flex-wrap text-[12px] gap-2 items-start my-6 justify-star ]">
+                    <div><a href="#">Terms of Service</a></div>
+                    <div><a href="#">Privacy Policy</a></div>
+                    <div><a href="#">Cookie Polices</a></div>
+                    <div><a href="#">Accessibility</a></div>
+                    <div><a href="#">more info</a></div>
+                    <div><a href="#">More-></a></div>
+                    <div>&copy; 2024 x crop.</div>
+            </div>
+
+        </div>
+
+        <!-- right box(third class) html ended -->
+    </div>
+</body>
+</html>
