@@ -1,0 +1,23 @@
+.header-content{
+    animation: fadeIn 3s;
+}
+
+.header{
+    margin: 0 30px;
+}
+
+@media screen and (max-width: 1030px) and (min-width:825px){
+    .header .text{
+        width: 105%;
+    }
+    .header p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .header .text{
+        width: 108%;
+    }
+}
+

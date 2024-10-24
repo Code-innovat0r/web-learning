@@ -1,0 +1,53 @@
+.explore-menu-list-item .active {
+    border: 4px solid tomato;
+    padding: 2px;
+    border-radius: 100%;
+}
+
+.explore-menu h1{
+    font-size: max(2vw, 30px);
+}
+
+@media screen and (max-width: 1030px) {
+    .explore-menu-text {
+        min-width: 100%;
+        font-size: 19px;
+    }
+
+    .explore-menu-list img {
+        width: 121%;
+    }
+
+    .explore-menu-list p {
+        font-size: 17px;
+    }
+
+    .explore-menu-list {
+        overflow-x: scroll;
+        width: 100%;
+    }
+
+    .explore-menu-list-item {
+        min-width: 20%;
+    }
+
+    /* Custom scrollbar styling */
+    .scroll-content::-webkit-scrollbar {
+        width: 2px;
+        height: 2px;
+    }
+
+    .scroll-content::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .scroll-content::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px;
+    }
+
+    .scroll-content::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
+
